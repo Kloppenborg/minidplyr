@@ -4,21 +4,21 @@
 #'
 #'Returns a dataframe
 #'
-#' @param df: A data frame
-#' @param vars_select: A vector of either characters (variables, names), inegers (variable indices), or boolians
+#' @param df A data frame
+#' @param vars A vector of either characters (variables, names), integers (variable indices), or boolian
 #'
 #' @return A data frame
 #' @export
 #' 
 #'
 #' @examples
-#' select(palmerpenguins::penguins, "species")
-#' select(palmerpenguins::penguins, c("species", "island"))
-#' select(palmerpenguins::penguins, 1:2)
-#' select(palmerpenguins::penguins, c(TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE))
+#' select2(palmerpenguins::penguins, "species")
+#' select2(palmerpenguins::penguins, c("species", "island"))
+#' select2(palmerpenguins::penguins, 1:2)
+#' select2(palmerpenguins::penguins, c(TRUE, FALSE, TRUE, TRUE, FALSE, TRUE, TRUE, FALSE))
 #' 
-select <- function(df, vars_select) {
-  df[, vars_select]
+select2 <- function(df, vars) {
+  df[vars]
 }
 
 #Add the roxygen skeleton (description in the top) in "code" --> "insert roxygen skeleton
