@@ -7,7 +7,7 @@
 #' @param df: A data frame
 #' @param vars_select: A vector of either characters (variables, names), inegers (variable indices), or boolians
 #'
-#' @return
+#' @return A data frame
 #' @export
 #' 
 #'

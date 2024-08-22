@@ -11,6 +11,9 @@ select(df, vars_select)
 
 \item{vars_select:}{A vector of either characters (variables, names), inegers (variable indices), or boolians}
 }
+\value{
+A data frame
+}
 \description{
 Selects the variables of interest
 }
